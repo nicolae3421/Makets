@@ -1,0 +1,1353 @@
+/* Header */
+#blur{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(10em);    
+    transition: .5s;
+}
+#header{
+    width: 100%1;
+    height: auto; 
+    display: block;
+    margin: 0;
+}
+#header img{
+    width: 100%;
+}
+#header h3{
+    position: absolute;
+    z-index: 0;
+    color: #fff;
+    top: 55px;
+    left: 15%;
+    font-size: 31px;
+    font-family: "ProximaNovaT";
+    color: rgb(255, 255, 255);
+    line-height: 1.032;
+}
+#header > #nav-menu{
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 80%;
+}
+
+#header > nav{
+    position: absolute;
+    top: 65px;
+    left: 65%;
+}
+#header > nav > ul{
+    display: flex;
+    flex-wrap: nowrap;
+}
+#header > nav > ul > li{
+    margin-left: 50px;
+}
+#header > nav > ul > li:nth-child(1){
+    margin-left: 0;
+}
+#header > nav > ul > li > a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "ProximaNovaA";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+
+}
+/* Styles for burger-menu */
+#nav-menu > .menu-btn{
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50px;
+    border: none;
+    position: absolute;
+    z-index: 100
+}
+#nav-menu > .menu-btn:focus{
+    outline: none;
+}
+#nav-menu > .menu-btn span,
+#nav-menu >.menu-btn > span::before,
+#nav-menu > .menu-btn > span::after{
+    position: absolute;
+    top: 50%; margin-top: -1px;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 15px; 
+    height: 2px;
+    background-color: #222;
+}
+#nav-menu > .menu-btn > span::before,
+#nav-menu > .menu-btn > span::after{
+    content: '';
+    display: block;
+    transition: 0.5s;
+    margin-left: -10px !important;
+}
+#nav-menu > .menu-btn > span::before{
+    transform: translate(3px, -5px);
+}
+#nav-menu > .menu-btn > span::after{
+    transform: translate(3px, 5px);
+}
+#nav-menu > .menu-btn.active{
+    background: transparent;
+    z-index: 100
+}
+#nav-menu > .menu-btn.active > span{
+    height: 0px;
+}
+#nav-menu > .menu-btn.active > span::before{
+    transform: rotate(-35deg);
+    width: 15px;
+}
+#nav-menu > .menu-btn.active > span::after{
+    transform: rotate(35deg);
+    width: 15px;
+}
+#nav-menu > .menu-nav{
+    background-color: #fff;
+    height: auto;
+    line-height: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: -10px;
+}
+#nav-menu > .menu-nav > ul > li{
+    line-height: 2;
+}
+#nav-menu > .menu-nav > ul > li > a{
+    display: inline-block;
+    text-decoration: none;
+    color: #222;
+    margin-right: 20px;
+    /* opacity: 1; */
+}
+#nav-menu > .menu-nav{
+    transition: 0.5s;
+    transform-origin: right center;
+    transform: translate(-67%,-17%);
+    position: absolute;
+    opacity: 0;
+    z-index: -2;
+    background-color: #fff;   
+}
+#nav-menu > .menu-nav.active{
+    opacity: 1;
+    z-index: 10;
+}
+/* Styles for burger-menu */
+
+
+#header > .title{
+    position: absolute;
+    z-index: 2;
+    top: 500px;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%)
+}
+#header > .title h2{
+    font-size: 80px;
+    font-family: "ProximaNovaT";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 0.444;
+    text-align: center;
+}
+#header > .title h4{
+    font-size: 25px;
+    font-family: "ProximaNovaA";
+    color: rgb(255, 255, 255);
+    line-height: 1.778;
+    margin-top: 55px;
+    text-align: center;
+}
+  
+/* About */
+#about{
+    width: 100%;
+    height: auto;
+    margin-top: -3px;
+    position: relative;
+}
+#about > img:nth-child(1){
+    width: 100%;
+}
+#about > img:nth-child(2){
+    width: 40%;
+    position: absolute;
+    z-index: 5;
+    top: 120px;
+    left: 10%;
+    box-shadow: 0px 0px 79px -6px rgba(0,0,0,1);
+}
+#about > .title{
+    position: absolute;
+    width: 550px;
+    left: 50%;
+    top: 170px;  
+    margin-left: 50px; 
+}
+#about > .title > h2{
+    font-size: 56px;
+    font-family: "ForeverBrushScript";
+    color: rgb(255, 255, 255);
+    line-height: 0.571;
+    text-align: center;
+}
+#about > .title > h4{
+    font-size: 18px;
+    font-family: "ProximaNovaA";
+    color: rgb(255, 255, 255);
+    line-height: 1.778;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+#about > .title > h2 > .border {
+    background-color: rgb(255, 255, 255);
+    width: 108px;
+    height: 2px;
+    z-index: 222;
+    position: absolute;
+    left: 50%;
+    top: 56px;
+    transform: translate(-50%, -50%)
+}
+
+/* Singatures */
+#singatures{
+    widows: 100%;
+    height: auto;
+    margin-top: -3px;
+    position: relative;
+}
+#singatures > img{
+    width: 100%;
+}
+#singatures > .title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#singatures > .title > h2 {
+    font-size: 56px;
+    font-family: "ForeverBrushScript";
+    color: rgb(255, 255, 255);
+    line-height: 0.571;
+    text-align: center;
+    position: relative;
+    height: auto;
+}
+#singatures > .title > h4 {
+    font-size: 18px;
+    font-family: "ProximaNovaA";
+    color: rgb(255, 255, 255);
+    line-height: 1.778;
+    text-align: center;
+    width: 550px;
+    margin-top: 80px;
+}
+#singatures > .title > h2 > .border {
+    background-color: rgb(200, 35, 93);
+    position: absolute;
+    left: 50%;
+    top: 66px;
+    width: 108px;
+    height: 2px;
+    transform: translate(-50%, -50%)
+}
+
+/* Menu */
+#menu{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: #f3f4f7;
+    height: 900px;
+}  
+#menu > .title{
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, -50%);
+}
+#menu > .title > h2{
+    font-size: 56px;
+    font-family: "ForeverBrushScript";
+    color: rgb(11, 12, 13);
+    line-height: 0.571;
+    text-align: center;
+    position: relative;
+}
+#menu > #part1{
+    left: 15%;
+}
+#menu > #part1,
+#menu > #part2{
+    position: absolute;
+    top: 250px;
+    width: 500px;
+}
+#menu > #part2{
+    left: 55%;
+}
+#menu > #part1 > ul > li > h2,
+#menu > #part2 > ul > li > h2{
+    font-size: 16px;
+    font-family: "ProximaNovaA";
+    color: rgb(11, 12, 13);
+    line-height: 2;
+    text-align: left;
+    width: 100%;
+    position: relative;
+}
+#menu > #part1 > ul > li,
+#menu > #part2 > ul > li{
+    margin-top: 50px;
+}
+#menu > #part1 > ul > li:nth-child(1),
+#menu > #part2 > ul > li:nth-child(1){
+    margin-top: 0 !important;
+}
+#menu > #part1 > ul > li > h4,
+#menu > #part2 > ul > li > h4{
+    font-size: 16px;
+    font-family: "ProximaNovaA";
+    color: rgba(11, 12, 13, 0.702);
+    line-height: 1.2;
+}
+#menu > #part1 > ul > li > h2 > p,
+#menu > #part2 > ul > li > h2 > p{
+    font-size: 16px;
+    font-family: "ProximaNovaA";
+    color: rgb(200, 35, 93);
+    line-height: 2;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translate(-100%, -20%);
+}
+#menu > .title > h2 > .border {
+    background-color: rgb(200, 35, 93);
+    width: 108px;
+    height: 2px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Portfolio */
+#portfolio{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: auto;
+}
+#portfolio > img{
+    width: 30%;
+    position: absolute;
+    margin: 0;
+    margin-left: -4px;
+}
+#portfolio > img:first-child{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+#portfolio > img:nth-child(2){
+    top: 0;
+    left: 30%;
+}
+#portfolio > img:nth-child(3){
+    top: 0;
+    left: 60%;
+}
+#portfolio > img:nth-child(4){
+    top: 0;
+    left: 90%;
+}
+
+/* Footer */
+#footer{
+    width: 100%;
+    height: auto;
+    background-color: #25262a;
+    margin-top: -3px;
+}
+#footer > div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 156px 0;
+    position: relative
+}
+#footer > div > ul {
+    position: absolute;
+    width: 200px;
+    top: 80px;
+    left: 20%;
+}
+#footer > div > ul:first-child > li:nth-child(2){
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    line-height: 1.714;
+    text-align: left;
+}
+#footer > div > ul > li:nth-child(2){
+    margin-top: 55px;
+}
+#footer > div > ul > li > h2{
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    line-height: 2.286;
+}
+#footer > div > ul > li:first-child > h2{
+    font-size: 18px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    line-height: 1.778;
+}
+#footer > div > ul:first-child{
+    margin-right: 100px;
+    width: 255px
+}
+#footer > div > ul:nth-child(5) > li > h2 > i{
+    color: #c8235d;
+    margin-right: 10px;
+    font-size: 15px;
+}
+#footer > div > ul:nth-child(5) > li:nth-child(3) > h2 > i{
+    transform: scaleX(-1);
+    font-size: 17px;
+    margin-right: 15px !important; 
+}
+#footer > div > ul:nth-child(2){
+    left: 45%;
+}
+#footer > div > ul:nth-child(3){
+    left: 55%;
+}
+#footer > div > ul:nth-child(4){
+    left: 65%;
+}
+#footer > div > ul:nth-child(5){
+    left: 75%;
+}
+
+/* Copy-rights */
+#copy-rights{
+    width: 100%;
+    height: 120px;
+    background-color: #16171b;
+    position: relative;
+}
+#copy-rights > h2:first-child{
+    font-size: 16px;
+    font-family: "Roboto";
+    color: rgba(222, 212, 253, 0.502);
+    line-height: 1.5;
+    position: absolute;
+    top: 60px;
+    left: 15%;
+}
+#copy-rights > h2:nth-child(2){
+    font-size: 16px;
+    font-family: "Roboto";
+    color: rgba(222, 212, 253, 0.502);
+    line-height: 1.5;
+    position: absolute;
+    top: 60px;
+    left: 40%;
+    word-spacing: 25px;
+}
+#copy-rights > h2:nth-child(2) > span{
+    word-spacing: 5px;
+}
+#copy-rights > h2:nth-child(3){
+    position: absolute;
+    top: 60px;
+    left: 75%;
+    word-spacing: 20px;
+}
+#copy-rights > h2:nth-child(3) > i{
+    font-size: 16px;
+    color: rgba(222, 212, 253, 0.502);
+    line-height: 1.5;
+}
+#copy-rights > h2:nth-child(3) > i:first-child{
+    color: #fff;
+}
+
+@media screen and (max-width: 1890px){
+    #header .title h2{
+        font-size: 70px;
+    }
+    #header .title h4{
+        font-size: 20px;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 1550px){
+    #header .title{
+        top: 450px;
+    }
+    #header .title h2{
+        font-size: 60px;
+    }
+    #header .title h4{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 1500px){
+    #header > nav > ul > li{
+        margin-left: 30px;
+    }
+    #menu > #part1{
+        left: 5%;
+    }
+}
+@media screen and (max-width: 1300px){
+    #header .title{
+        top: 400px;
+    }
+    #header .title h2{
+        font-size: 50px;
+    }
+    #header .title h4{
+        margin-top: 35px;
+    }
+    #about > .title > h2{
+        font-size: 46px;
+    }
+    #about > .title > h2 > .border{
+        top: 46px;
+        width: 100px
+    }
+    #about > .title{
+        top: 150px;
+        width: 450px;
+    }
+    #about > .title > h4{
+        font-size: 16px;
+    }
+    #about > img:nth-child(2){
+        top: 100px;
+    }
+}
+@media screen and (max-width: 1200px){
+    #header  nav {
+        left: 55%;
+    }
+    #header > nav > ul > li{
+        margin-left: 20px;
+    }
+    #menu{
+        height: 750px
+    }
+    #menu > #part1,
+    #menu > #part2{
+        width: 400px;
+    } 
+    #menu > .title > h2{
+        font-size: 46px;
+    }   
+    #menu > .title > h2 > .border {
+        width: 100px;
+        top: 70px;
+    }
+    #menu > #part1 > ul > li > h2,
+    #menu > #part2 > ul > li > h2,
+    #menu > #part1 > ul > li > p,
+    #menu > #part2 > ul > li > p,
+    #menu > #part1 > ul > li > h4,
+    #menu > #part2 > ul > li > h4{
+        font-size: 12px;
+    }
+    #footer > div{
+        padding: 140px 0;
+    }
+    #footer > div > ul > li:nth-child(2){
+        margin-top: 35px;
+    }
+    #footer > div > ul{
+        left: 15%;
+    }
+    #footer > div > ul:nth-child(5) > li > h2 > i{
+        font-size: 12px;
+    }
+    #footer > div > ul > li > h2{
+        font-size: 12px;
+    }
+    #footer > div > ul > li:first-child > h2{
+        font-size: 16px;
+    }
+    #copy-rights{
+        height: 90px;
+    }
+    #copy-rights > h2:first-child,
+    #copy-rights > h2:nth-child(2),
+    #copy-rights > h2:nth-child(3) > i{
+        font-size: 13px;
+    }
+    #copy-rights > h2:first-child,
+    #copy-rights > h2:nth-child(2),
+    #copy-rights > h2:nth-child(3){
+        top: 40px;
+    }
+}
+@media screen and (max-width: 1150px){
+    #header .title{
+        top: 325px;
+    }
+    #header .title h2{
+        font-size: 40px;
+    }
+    #header .title h4{
+        margin-top: 25px;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 1100px){
+    #about > img:nth-child(2){
+        width: 35%;
+    }
+    #about > .title{
+        left: 45%;
+        top: 125px;
+    }
+    #about > .title > h2{
+        font-size: 36px;
+    }
+    #about > .title > h2 > .border{
+        top: 40px;
+        width: 90px
+    }
+    #about > .title > h4{
+        font-size: 15px;
+        margin-top: 40px;
+    }
+    #about > img:nth-child(2){
+        top: 90px;
+    }
+    #singatures > .title > h2{
+        font-size: 46px;
+    }
+    #singatures > .title > h2 > .border{
+        width: 100px;
+        top: 60px;
+    }
+    #singatures > .title > h4{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 1000px){
+    #footer > div{
+        padding: 120px 0;
+    }
+    #footer > div > ul > li:nth-child(2){
+        margin-top: 20px;
+    }
+    #footer > div > ul{
+        left: 10%;
+        top: 60px;
+    }
+    #footer > div > ul:first-child{
+        width: 230px;
+    }
+    #footer > div > ul:nth-child(5) > li > h2 > i{
+        font-size: 10px;
+        margin-right: 8px;
+    }
+    #footer > div > ul:nth-child(5) > li:nth-child(3) > h2 > i{
+        font-size: 12px;
+        margin-right: 12px !important;
+    }
+    
+    #footer > div > ul > li > h2{
+        font-size: 10px;
+    }
+    #footer > div > ul > li:first-child > h2{
+        font-size: 14px;
+    }
+    #copy-rights{
+        height: 40px;
+    }
+    #copy-rights > h2:first-child,
+    #copy-rights > h2:nth-child(2),
+    #copy-rights > h2:nth-child(3) > i{
+        font-size: 8px;
+        height: auto;
+    }
+    #copy-rights > h2:first-child,
+    #copy-rights > h2:nth-child(2),
+    #copy-rights > h2:nth-child(3){
+        top: 15px ;
+        word-spacing: 10px;
+    }
+    #copy-rights > h2:first-child{
+        left: 10%;
+    }
+    #copy-rights > h2:nth-child(2){
+        left: 35%;
+    }
+    #copy-rights > h2:nth-child(3){
+        top: 10px;
+    }
+}
+@media screen and (max-width: 950px){
+    #about > img:nth-child(2){
+        width: 30%;
+        left: 8%;
+    }
+    #about > .title{
+        left: 40%;
+        width: 400px;
+        top: 100px;
+    }
+    #about > .title > h2{
+        font-size: 30px;
+    }
+    #about > .title > h2 > .border{
+        top: 30px;
+        width: 80px;
+    }
+    #about > .title > h4{
+        font-size: 12px;
+    }
+    #singatures > .title > h2{
+        font-size: 36px;
+    }
+    #singatures > .title > h2 > .border{
+        width: 90px;
+        top: 50px;
+    }
+    #singatures > .title > h4{
+        font-size: 15px;
+        margin-top: 70px;
+    }
+    #menu > .title > h2{
+        font-size: 30px;
+    }   
+    #menu > .title > h2 > .border {
+        width: 80px;
+        top: 50px;
+    }
+    #menu > #part1,
+    #menu > #part2{
+        top: 200px;
+    } 
+    #menu{
+        height: 600px
+    }
+    #menu > #part1,
+    #menu > #part2{
+        width: 350px;
+    }
+    #menu > #part1 > ul > li > h2,
+    #menu > #part2 > ul > li > h2,
+    #menu > #part1 > ul > li > p,
+    #menu > #part2 > ul > li > p,
+    #menu > #part1 > ul > li > h4,
+    #menu > #part2 > ul > li > h4{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 850px){
+    #menu{
+        height: 600px;
+    }
+    #menu > #part1,
+    #menu > #part2{
+        width: 300px;
+    }
+    #menu > #part1 > ul > li > h2,
+    #menu > #part2 > ul > li > h2,
+    #menu > #part1 > ul > li > p,
+    #menu > #part2 > ul > li > p,
+    #menu > #part1 > ul > li > h4,
+    #menu > #part2 > ul > li > h4{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 900px){
+    #header .title{
+        top: 300px;
+    }
+    #header  nav {
+        left: 50%;
+        top: 55px;
+    }
+    #header > nav > ul > li{
+        margin-left: 20px;
+    }
+    #header h3{
+        top: 45px;
+        font-size: 25px; 
+    }
+    #header > nav > ul > li > a{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 800px){
+    #about > img:nth-child(2){
+        width: 25%;
+        left: 7%;
+    }
+    #about > .title{
+        left: 35%;
+        width: 350px;
+        top: 100px;
+    }
+    #about > .title > h2{
+        font-size: 30px;
+    }
+    #about > .title > h2 > .border{
+        width: 70px
+    }
+    #about > .title > h4{
+        font-size: 12px;
+    }
+    #singatures > .title > h2{
+        font-size: 30px;
+    }
+    #singatures > .title > h2 > .border{
+        width: 80px;
+        top: 40px;
+    }
+    #singatures > .title > h4{
+        font-size: 13px;
+        margin-top: 50px;
+    }
+    #footer > div{
+        padding: 100px 0;
+    }
+    #footer > div > ul > li:nth-child(2){
+        margin-top: 15px;
+    }
+    #footer > div > ul{
+        left: 7%;
+        top: 40px;
+        width: 150px;
+    }
+    #footer > div > ul:first-child{
+        width: 200px;
+    }
+    #footer > div > ul:nth-child(5) > li > h2 > i{
+        font-size: 8px;
+        margin-right: 6px;
+    }
+    #footer > div > ul:nth-child(5) > li:nth-child(3) > h2 > i{
+        font-size: 10px;
+        margin-right: 9px !important;
+    }
+    #footer > div > ul > li > h2{
+        font-size: 8px;
+    }
+    #footer > div > ul > li:first-child > h2{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 750px){
+    #header .title{
+        top: 250px;
+    }
+    #header .title h2{
+        font-size: 25px;
+    }
+    #header .title h4{
+        margin-top: 25px;
+        font-size: 8px;
+    }
+    #header h3{
+        font-size: 20px; 
+    }
+    #header > nav > ul > li > a{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 700px){
+    #header  nav {
+        top: 45px;
+    }
+    #header > nav > ul > li{
+        margin-left: 10px;
+    }
+    #header h3{
+        left: 10%;
+        top: 35px
+    }
+    #header .title{
+        top: 200px;
+    }
+    #about > img:nth-child(2){
+        width: 25%;
+        left: 7%;
+    }
+    #about > .title{
+        left: 35%;
+        width: 300px;
+        top: 80px;
+    }
+    #about > .title > h2{
+        font-size: 25px;
+    }
+    #about > .title > h2 > .border{
+        width: 60px
+    }
+    #about > .title > h4{
+        font-size: 10px;
+    }
+    #menu{
+        height: 750px;
+    }    
+    #menu > #part1,
+    #menu > #part2{
+        width: 90%;
+        position: relative;
+        left: 5%;
+    }
+    #menu > #part1{
+        top: 150px;
+    }
+    #menu > #part2{
+        top: 190px;
+        left: 5%;
+    }
+    #menu > #part1 > ul > li > h2,
+    #menu > #part2 > ul > li > h2{
+        width: 100%;
+    }
+    #menu > #part1 > ul > li > h2,
+    #menu > #part2 > ul > li > h2,
+    #menu > #part1 > ul > li > h2 > p,
+    #menu > #part2 > ul > li > h2 > p,
+    #menu > #part1 > ul > li > h4,
+    #menu > #part2 > ul > li > h4{
+        font-size: 8px;
+    }
+    #menu > .title{
+        top: 50px;
+    }
+    #menu > .title > h2{
+        font-size: 25px;
+    }   
+    #menu > .title > h2 > .border {
+        width: 70px;
+        top: 30px;
+    }
+    #copy-rights{
+        height: 23px;
+    }
+    #copy-rights > h2:first-child,
+    #copy-rights > h2:nth-child(2),
+    #copy-rights > h2:nth-child(3) > i{
+        font-size: 4px;
+        height: auto;
+    }
+    #copy-rights > h2:first-child,
+    #copy-rights > h2:nth-child(2),
+    #copy-rights > h2:nth-child(3){
+        top: 7px ;
+        word-spacing: 7px;
+    }
+    #copy-rights > h2:first-child{
+        left: 10%;
+    }
+    #copy-rights > h2:nth-child(2){
+        left: 35%;
+    }
+    #copy-rights > h2:nth-child(3){
+        top: -2px;
+        left: 75%
+    }
+    #copy-rights > h2:nth-child(2) > span{
+        word-spacing: 2px ;
+    }
+}
+@media screen and (max-width: 600px){
+    #header > nav {
+        display: none;
+    }
+    #header > #nav-menu {
+        display: inline-block;
+    }
+    #header .title h2{
+        font-size: 20px;
+    }
+    #header .title h4{
+        margin-top: 25px;
+        font-size: 6px;
+    }
+    #about > .title{
+        left: 30%;
+        width: 300px;
+        top: 80px;
+    }
+    #about > .title > h2{
+        font-size: 20px;
+    }
+    #about > .title > h2 > .border{
+        top: 20px;
+        width: 50px;
+    }
+    #about > .title > h4{
+        margin-top: 30px;
+    }
+    #singatures > .title > h2{
+        font-size: 25px;
+    }
+    #singatures > .title > h2 > .border{
+        width: 70px;
+        top: 30px;
+    }
+    #singatures > .title > h4{
+        font-size: 10px;
+        margin-top: 40px;
+        width: 450px
+    }
+    #menu{
+        height: 530px;
+    }
+    #menu > #part1{
+        top: 100px;
+    }
+    #menu > #part2{
+        top: 120px;
+    }
+    #menu > #part1 > ul > li,
+    #menu > #part2 > ul > li{
+        margin-top: 20px;
+    }
+    #footer > div{
+        padding: 70px 0;
+    }
+    #footer > div > ul > li:nth-child(2){
+        margin-top: 10px;
+    }
+    #footer > div > ul{
+        left: 4%;
+        top: 30px;
+        width: 100px;
+    }
+    #footer > div > ul:first-child{
+        width: 150px;
+    }
+    #footer > div > ul:nth-child(5) > li > h2 > i{
+        font-size: 6px;
+        margin-right: 4px;
+    }
+    #footer > div > ul:nth-child(5) > li:nth-child(3) > h2 > i{
+        font-size: 8px;
+        margin-right: 6px !important;
+    }
+    #footer > div > ul > li > h2{
+        font-size: 6px;
+    }
+    #footer > div > ul > li:first-child > h2{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 550px){
+    #about > .title{
+        left: 50%;
+        width: 300px;
+        top: 10px;
+        margin: 0;
+        transform: translateX(-50%);
+    }
+    #about > .title > h2{
+        font-size: 20px;
+    }
+    #about > .title > h2 > .border{
+        top: 20px;
+    }
+    #about > .title > h4{
+        margin-top: 25px;
+        font-size: 8px;
+    }
+    #about > img:nth-child(2){
+        width: 25%;
+        left: 50%;
+        top: 110px;
+        transform: translateX(-50%);
+    }
+}
+@media screen and (max-width: 500px){
+    #header h3{
+        font-size: 15px;
+    }  
+    #header .title{
+        top: 150px;
+    }
+    #about > .title > h2{
+        font-size: 16px;
+    }
+    #about > .title > h2 > .border{
+        top: 15px;
+        width: 40px;
+        height: 1px;
+    }
+    #about > .title > h4{
+        margin-top: 20px;
+        font-size: 6px;
+    }
+    #about > img:nth-child(2){
+        top: 90px;
+    }
+    #singatures > .title > h2{
+        font-size: 20px;
+    }
+    #singatures > .title > h2 > .border{
+        width: 60px;
+        top: 25px;
+    }
+    #singatures > .title > h4{
+        font-size: 8px;
+        margin-top: 30px;
+        width: 375px
+    }
+}
+@media screen and (max-width: 450px){
+    #footer > div{
+        padding: 50px 0;
+    }
+    #footer > div > ul > li:nth-child(2){
+        margin-top: 10px;
+    }
+    #footer > div > ul{
+        top: 20px;
+        width: 60px;
+    }
+    #footer > div > ul:first-child{
+        width: 100px;
+    }
+    #footer > div > ul:nth-child(5) > li > h2 > i{
+        font-size: 4px;
+        margin-right: 2px;
+    }
+    #footer > div > ul:nth-child(5) > li:nth-child(3) > h2 > i{
+        font-size: 4px;
+        margin-right: 3px !important;
+    }
+    #footer > div > ul > li > h2{
+        font-size: 5px;
+    }
+    #footer > div > ul > li:first-child > h2{
+        font-size: 7px;
+    }
+    #footer > div > ul:nth-child(2){
+        left: 40%;
+    }
+    #footer > div > ul:nth-child(3){
+        left: 50%;
+    }
+    #footer > div > ul:nth-child(4){
+        left: 60%;
+    }
+    #footer > div > ul:nth-child(5){
+        left: 70%;
+    }
+}
+@media screen and (max-width: 400px){
+    #header  #nav-menu {
+        top: 25px;
+    }
+    #header h3{
+        left: 10%;
+        top: 25px
+    } 
+    #header .title{
+        top: 125px;
+    }
+    #header .title h2{
+        font-size: 15px;
+    }
+    #header .title h4{
+        margin-top: 25px;
+        font-size: 5px;
+    }
+    #nav-menu > .menu-btn{
+        width: 25px;
+        height: 25px;
+    }
+    #nav-menu > .menu-btn span,
+    #nav-menu >.menu-btn > span::before,
+    #nav-menu > .menu-btn > span::after{
+        width: 10px;
+    }
+    #nav-menu >.menu-btn > span::before,
+    #nav-menu > .menu-btn > span::after{
+        margin-left: -8px  !important;
+    }
+    #about > .title > h2{
+        font-size: 13px;
+    }
+    #about > .title > h2 > .border{
+        top: 15px;
+        width: 30px
+    }
+    #about > .title > h4{
+        margin-top: 15px;
+        font-size: 5px;
+    }
+    #about > img:nth-child(2){
+        top: 70px;
+    }
+    #singatures > .title > h2{
+        font-size: 15px;
+    }
+    #singatures > .title > h2 > .border{
+        width: 50px;
+        top: 20px;
+        height: 1px;
+    }
+    #singatures > .title > h4{
+        font-size: 6px;
+        margin-top: 20px;
+        width: 275px
+    }
+    #menu > #part1 > ul > li > h2,
+    #menu > #part2 > ul > li > h2,
+    #menu > #part1 > ul > li > h2 > p,
+    #menu > #part2 > ul > li > h2 > p,
+    #menu > #part1 > ul > li > h4,
+    #menu > #part2 > ul > li > h4{
+        font-size: 6px;
+    }
+    #menu > .title > h2{
+        font-size: 20px;
+    }   
+    #menu > .title > h2 > .border {
+        width: 60px;
+        top: 20px;
+        height: 1px;
+    }
+    #menu > #part1 > ul > li,
+    #menu > #part2 > ul > li{
+        margin-top: 10px;
+    }
+    #menu{
+        height: 390px;
+    }
+    #menu > #part2{
+        top: 110px;
+    }
+    #copy-rights{
+        height: 13px;
+    }
+    #copy-rights > h2:first-child,
+    #copy-rights > h2:nth-child(2),
+    #copy-rights > h2:nth-child(3) > i{
+        font-size: 4px;
+    }
+    #copy-rights > h2:first-child,
+    #copy-rights > h2:nth-child(2),
+    #copy-rights > h2:nth-child(3){
+        top: 3px ;
+        word-spacing: 5px;
+    }
+    #copy-rights > h2:nth-child(3){
+        top: -6px;
+    }
+}
+@media screen and (max-width: 350px){
+    #about > .title{
+        width: 250px;
+    }
+    #about > img:nth-child(2){
+        top: 60px;
+    }
+    #footer > div{
+        padding: 30px 0;
+    }
+    #footer > div > ul > li:nth-child(2){
+        margin-top: 5px;
+    }
+    #footer > div > ul{
+        top: 15px;
+        width: 40px;
+    }
+    #footer > div > ul:first-child{
+        width: 70px;
+    }
+    #footer > div > ul:nth-child(5) > li > h2 > i{
+        font-size: 2px;
+        margin-right: 1px;
+    }
+    #footer > div > ul:nth-child(5) > li:nth-child(3) > h2 > i{
+        font-size: 2px;
+        margin-right: .5px !important;
+    }
+    #footer > div > ul > li > h2{
+        font-size: 3px;
+    }
+    #footer > div > ul > li:first-child > h2{
+        font-size: 5px;
+    }
+}
+@media screen and (max-width: 300px){
+    #header .title{
+        top: 100px;
+    }
+    #singatures > .title > h2{
+        font-size: 10px;
+    }
+    #singatures > .title > h2 > .border{
+        width: 40px;
+        top: 10px;
+    }
+    #singatures > .title > h4{
+        font-size: 4px;
+        margin-top: 10px;
+        width: 200px
+    }
+    #copy-rights{
+        height: 8px;
+    }
+    #copy-rights > h2:first-child,
+    #copy-rights > h2:nth-child(2),
+    #copy-rights > h2:nth-child(3) > i{
+        font-size: 2px;
+    }
+    #copy-rights > h2:first-child,
+    #copy-rights > h2:nth-child(2),
+    #copy-rights > h2:nth-child(3){
+        top: 3px ;
+        word-spacing: 5px;
+    }
+    #copy-rights > h2:nth-child(3){
+        top: -8px;
+    }
+}
+@media screen and (max-width: 250px){
+    #about > .title{
+        width: 200px;
+    }
+    #about > .title > h2{
+        font-size: 10px;
+    }
+    #about > .title > h2 > .border{
+        top: 10px;
+        width: 20px
+    }
+    #about > .title > h4{
+        margin-top: 15px;
+        font-size: 3px;
+    }
+    #about > img:nth-child(2){
+        top: 45px;
+    }
+    #footer > div > ul:first-child{
+        width: 60px;
+    }
+}
